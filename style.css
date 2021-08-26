@@ -1,9 +1,13 @@
+/* This controls the whole page and sets the box-sizing to border-box so the grid works. */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 
 }
+
+/* The body has a max width of 1100px so the poster does not grow, its is then set to margin 0px, auto so it stays in place when the site is strechted */
 
 body {
   max-width: 1100px;
@@ -15,6 +19,8 @@ body {
   
 }
 
+/* The header takes on the property grid and is a container for each div element */
+
 header{
 display: grid;
 grid-template-columns: repeat(4,1fr);
@@ -25,13 +31,7 @@ height: 300px;
 
 }
 
-
-section {
-display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: repeat(1,1fr);
-  
-}
+/* This places the text boxes into the right place in the grid */
 
 .information_text_1 {
   grid-column: 1 ;
@@ -52,6 +52,17 @@ grid-template-rows: repeat(1,1fr);
   grid-row: 2;
 }
 
+
+/* This section controls the grid for the boxes*/
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+    
+  }
+
+/* This section controls the boxes and where they strech over the grid */
 
 .box1 {
 height: 200px;
